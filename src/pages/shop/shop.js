@@ -8,20 +8,40 @@ import { useEffect, useState } from "react"
 export default function Shop() {
 
     const [products, setProducts] = useState([])
+    const [allProducts, setAllProducts] = useState([])
 
     useEffect(() => {
         fetch('https://dummyjson.com/products')
             .then(res => res.json())
             .then(json => {
                 setProducts(json.products)
+                setAllProducts(json.products)
             })
     }, [])
 
-    function handleFilter(e) {
-        const Line = e.target
-        const LineExpansible = e.target.nextSibling
-        LineExpansible.classList.toggle('expansive')
-        Line.classList.toggle('bold')
+    function handleFilter(cat) {
+        const category = cat.target.getAttribute('data-category')
+
+        let productFilter = []
+
+        if (category === 'all') {
+
+            setProducts(allProducts)
+
+        } else {
+
+            allProducts.forEach(p => {
+
+                if (p.category === category) {
+
+                    productFilter.push(p)
+                }
+
+            })
+
+            setProducts(productFilter)
+        }
+
     }
 
     return (
@@ -34,21 +54,13 @@ export default function Shop() {
                 <aside className="shopfilter">
                     <h3>Categories</h3>
                     <ul className="shopfilter-filters">
-                        <li>Cell phones</li>
-                        <li onClick={(e) => handleFilter(e)}>Armchairs</li>
-                        <ul className="shopfilter-filters2 expansive">
-                            <li>All</li>
-                            <li>Interior</li>
-                            <li>Office</li>
-                            <li>Rocking chairs</li>
-                            <li>Leather armchairs</li>
-                        </ul>
-                        <li>Laptop</li>
-                        <li>Perfumes</li>
-                        <li>Boards</li>
-                        <li>Lamps</li>
-                        <li>Textile</li>
-                        <li>Decor</li>
+                        <li onClick={(e) => handleFilter(e)} data-category={'smartphones'}>Cell phones</li>
+                        <li onClick={(e) => handleFilter(e)} data-category={'laptops'}>Laptop</li>
+                        <li onClick={(e) => handleFilter(e)} data-category={'fragrances'}>Perfumes</li>
+                        <li onClick={(e) => handleFilter(e)} data-category={'skincare'}>Skincare</li>
+                        <li onClick={(e) => handleFilter(e)} data-category={'groceries'}>Groceries</li>
+                        <li onClick={(e) => handleFilter(e)} data-category={'home-decoration'}>Decor</li>
+                        <li onClick={(e) => handleFilter(e)} data-category={'all'}>All</li>
                     </ul>
                 </aside>
                 <div className="shopMain-products">
