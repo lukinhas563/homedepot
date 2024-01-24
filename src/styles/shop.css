@@ -19,7 +19,7 @@
 
 .shopMain-products {
     display: grid;
-    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -63,8 +63,16 @@
     font-weight: 500;
 }
 
+@media (max-width: 1550px) {
 
-@media (max-width: 1182px) {
+    .shopMain-products {
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+    }
+
+}
+
+
+@media (max-width: 1270px) {
 
     .shopMain-products {
         grid-template-columns: repeat(3, minmax(100px, 1fr));
