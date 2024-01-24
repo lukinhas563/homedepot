@@ -1,0 +1,67 @@
+.formShipping {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.formShipping-title {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 20%;
+    border-bottom: 1px solid var(--four-Color);
+}
+
+.formShipping-title h2 {
+    font-size: 30px;
+
+}
+
+.formShipping form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formShipping form div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.formShipping form div input {
+    width: 30rem;
+    height: 50px;
+    padding: 20px;
+    background-color: var(--four-Color);
+}
+
+.formShipping form input {
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    background-color: var(--four-Color);
+}
+
+.shipping-butons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 60rem;
+}
+
+.shipping-butons-back {
+    color: var(--second-Color);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.shipping-butons-proceed {
+    background-color: var(--second-Color);
+    height: 50px;
+    width: 200px;
+    color: white;
+}

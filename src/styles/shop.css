@@ -1,0 +1,64 @@
+.shopHeader {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    height: 30vh;
+    background-color: var(--four-Color);
+}
+
+.shopHeader h2 {
+    margin-left: 100px;
+    font-size: 30px;
+    color: var(--second-color);
+}
+
+.shopMain {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.shopMain-products {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.shopfilter {
+    padding: 70px;
+}
+
+.shopfilter h3 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.shopfilter-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: gray;
+
+}
+
+.shopfilter-filters2 {
+    display: flex;
+    flex-direction: column;
+    max-height: 1000px;
+    gap: 10px;
+    margin-left: 30px;
+    transition: max-height 300ms ease-in-out;
+}
+
+.expansive {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.bold {
+    font-weight: 500;
+}

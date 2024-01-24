@@ -1,0 +1,29 @@
+.shopCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 200px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40%;
+    margin: 0 20px;
+    width: 100%;
+}
+
+.shopCard img {
+    height: 100%;
+    width: 100%;
+}
+
+.shopCard-img {
+    width: 100%;
+    height: 60%;
+}

@@ -1,0 +1,14 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 50px;
+}
+
+footer p {
+    color: rgb(192, 192, 192);
+}
+
+footer div {
+    display: flex;
+    gap: 50px;
+}

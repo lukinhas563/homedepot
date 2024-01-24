@@ -1,0 +1,39 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--second-Color);
+    padding: 0 100px;
+    background-color: var(--thirth-Color);
+    height: 100px;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.bagShop-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bagShop {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.bagShop-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    background-color: var(--first-Color);
+    border-radius: 100%;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    cursor: pointer;
+}
