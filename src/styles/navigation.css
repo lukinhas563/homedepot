@@ -37,3 +37,19 @@
     left: 15px;
     cursor: pointer;
 }
+
+@media (max-width: 880px) {
+
+    .navigation div nav {
+        display: none;
+    }
+
+}
+
+@media (max-width: 580px) {
+
+    .navigation div input {
+        display: none;
+    }
+
+}

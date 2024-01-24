@@ -30,9 +30,9 @@ export default function Nav() {
 
     return (
         <div className="navigation">
-            <div className="flex gap-10">
+            <div className=" flex gap-10 ">
                 <Link href={'/'} className="logo">homedepot.</Link>
-                <nav className="flex gap-10">
+                <nav className="navMenu flex gap-10">
                     <Link href={'/shop/shop'}>Shop</Link>
                     <Link href={'/'}>Sale</Link>
                     <Link href={'/'}>About</Link>

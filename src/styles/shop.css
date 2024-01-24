@@ -62,3 +62,33 @@
 .bold {
     font-weight: 500;
 }
+
+
+@media (max-width: 1182px) {
+
+    .shopMain-products {
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+    }
+
+}
+
+
+@media (max-width: 880px) {
+
+    .shopMain-products {
+
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+
+    }
+
+}
+
+@media (max-width: 644px) {
+
+    .shopMain-products {
+
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+
+    }
+
+}
