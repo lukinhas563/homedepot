@@ -1,4 +1,5 @@
 import Nav from "@/components/Nav"
+import Image from "next/image"
 import Footer from "@/components/Footer"
 import { useRouter } from "next/router"
 
@@ -30,45 +31,49 @@ export default function Home() {
         <div>
           <span className='row-span-2 bg-red-800 h-[400px]'>
             <p>Sofas</p>
-            <img src='whitesofa.png' alt='Product image'></img>
+            <Image src='/whitesofa.png' alt='Product image' width={1000} height={1000} />
           </span>
           <span className='col-span-2 bg-slate-600'>
             <p>Beds</p>
-            <img src='whitebed.jpg' alt='Product image'></img>
+            <Image src='/whitebed.jpg' alt='Product image' width={962} height={962} />
           </span>
           <span>
             <p>Lamps</p>
-            <img src='whitelamp.jpg' alt='Product image'></img>
+            <Image src='/whitelamp.jpg' alt='Product image' width={1000} height={1000} />
           </span>
           <span>
             <p>Armchairs</p>
-            <img src='whitearmchair.jpg' alt='Product image'></img>
+            <Image src='/whitearmchair.jpg' alt='Product image' width={1500} height={1000} />
           </span>
           <span className='row-span-2 bg-amber-900 h-[400px]'>
             <p>Chairs</p>
-            <img src='whitechair.jpg' alt='Product image'></img>
+            <Image src='/whitechair.jpg' alt='Product image' width={2560} height={2560} />
           </span>
           <span className='bg-gray-800'>
             <p>Textile</p>
-            <img src='whitepillow.jpg' alt='Product image'></img>
+            <Image src='/whitepillow.jpg' alt='Product image' width={640} height={640} />
           </span>
           <span className='col-span-2 bg-lime-800'>
             <p>Mirrors</p>
-            <img src='whitemirror.jpg' alt='Product image'></img>
+            <Image src='/whitemirror.jpg' alt='Product image' width={750} height={750} />
           </span>
           <span>
             <p>Decoration</p>
-            <img src='whitedecoration.jpg' alt='Product image'></img>
+            <Image src='/whitedecoration.jpg' alt='Product image' width={1920} height={1080} />
           </span>
         </div>
       </section>
       <h4 className="popular">- Interior styles</h4>
       <article>
         <div>
-          <img src='whitebed.jpg' alt='white decoration'></img>
+          <Image src='/whitebed.jpg' alt='white decoration' width={962} height={962} />
           <span>
             <h5>White style</h5>
-            <p>White decorations are a popular choice in the United States, embodying a timeless and classic aesthetic that transcends trends. Whether it's a pristine white Christmas, a wedding adorned in ivory elegance, or a clean and minimalist home interior, the color white is celebrated for its versatility and ability to create a sense of purity and simplicity.</p>
+            <p>White decorations are a popular choice in the United States, embodying a timeless
+              and classic aesthetic that transcends trends. Whether it`s a pristine white
+              Christmas,a wedding adorned in ivory elegance, or a clean and minimalist
+              home interior, the color white is celebrated for its versatility and ability
+              to create a sense of purity and simplicity.</p>
             <button>more details</button>
           </span>
         </div>
